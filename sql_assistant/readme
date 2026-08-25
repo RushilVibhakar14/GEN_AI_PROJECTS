@@ -1,1 +1,43 @@
+# SQL Assistant
 
+An AI-powered SQL Assistant that lets users ask questions about business data in natural language.
+
+## How It Works
+
+User Question
+→ Guardrails
+→ LLM generates SQL
+→ SQL Validator
+→ SQLite Database
+→ Query Results
+→ LLM generates explanation
+
+## Tech Stack
+
+- Python
+- LangChain
+- Google Gemini
+- SQLite
+- Pandas
+- Gradio
+
+## Key Features
+
+- Natural-language to SQL
+- SQL validation and read-only protection
+- SQLite database querying
+- Natural-language result explanation
+- Gradio UI
+
+## Example
+
+**Question:**
+"Who are the top customers by revenue?"
+
+The LLM generates a `SELECT` query, the application validates it, executes it, and presents the results with a simple explanation.
+
+## Run
+
+```bash
+uv sync
+uv run python main.py
